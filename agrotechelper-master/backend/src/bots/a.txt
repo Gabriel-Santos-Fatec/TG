@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<partial-response><changes><update id="formSeguroSegurado:panelSegurado"><![CDATA[<span id="formSeguroSegurado:panelSegurado">
+						<div class="widget-section">
+							<span id="formSeguroSegurado:panelCpfCnpj">
+								<div class="field g2"><label>CPF/CNPJ</label>
+									<div class="entry"><input id="formSeguroSegurado:cpfCnpj" type="text" name="formSeguroSegurado:cpfCnpj" value="458.221.438-06" class="mask-cpf-cnpj placeholder requiredSeguroSegurado" alt="Ex. 12345678901" maxlength="18" style="" onchange="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;change&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:cpfCnpj&quot;} ,&quot;sourceId&quot;:this,&quot;begin&quot;:&quot;loadingEventSeguradoShow();&quot;} )" />
+									</div>
+									<div class="loading inprogress g3 alpha loadingEventSegurado" style="display: none">Carregando informações...</div>
+								</div></span>
+
+							<span id="formSeguroSegurado:divPf">
+								<div class="field g3"><label>Nome completo</label>
+									<div class="entry"><input id="formSeguroSegurado:nomeProponente" type="text" name="formSeguroSegurado:nomeProponente" value="GUILHERME OLIVEIRA PAGLIONI" class="mask-alfa-hifen maiusculo requiredSeguroSegurado" maxlength="60" style="" />
+									</div>
+								</div>
+
+								<div class="field g2"><label>Data de nascimento</label>
+									<div class="entry"><input id="formSeguroSegurado:dataNascimento" type="text" name="formSeguroSegurado:dataNascimento" value="31/07/1997" class="mask-date-nasc placeholder requiredSeguroSegurado" alt="dd/mm/aaaa" style="" onchange="mojarra.ab(this,event,'change','@this',0)" />
+									</div>
+									<div class="cf mbottom10"></div>
+
+								</div></span>
+
+							<div class="cf mbottom10"></div>
+
+							<div class="field g2 l2"><label id="formSeguroSegurado:optCelular">Celular</label>
+								<div class="entry phone"><input id="formSeguroSegurado:dddCelular" type="text" name="formSeguroSegurado:dddCelular" class="dd mask-numbers" maxlength="2" onchange="mojarra.ab(this,event,'change',0,0)" /><input id="formSeguroSegurado:telefoneCelular" type="text" name="formSeguroSegurado:telefoneCelular" class="number mask-phone-segurado" maxlength="10" onblur="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;blur&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneCelular&quot;} ,&quot;sourceId&quot;:this} )" onchange="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;change&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneCelular&quot;} ,&quot;sourceId&quot;:this} )" />
+								</div>
+							</div>
+
+							<div class="field g2 l2"><label id="formSeguroSegurado:optResidencial">Telefone Residencial</label>
+								<div class="entry phone"><input id="formSeguroSegurado:dddResidencial" type="text" name="formSeguroSegurado:dddResidencial" value="14" class="dd mask-numbers" maxlength="2" onchange="mojarra.ab(this,event,'change',0,0)" /><input id="formSeguroSegurado:telefoneResidencial" type="text" name="formSeguroSegurado:telefoneResidencial" value="9794-0076" class="number mask-phone-segurado" maxlength="9" onblur="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;blur&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneResidencial&quot;} ,&quot;sourceId&quot;:this} )" onchange="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;change&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneResidencial&quot;} ,&quot;sourceId&quot;:this} )" />
+								</div>
+							</div>
+
+							<div class="field g2 l2"><label id="formSeguroSegurado:optComercial">Telefone Comercial</label>
+								<div class="entry phone"><input id="formSeguroSegurado:dddComercial" type="text" name="formSeguroSegurado:dddComercial" class="dd mask-numbers" maxlength="2" onchange="mojarra.ab(this,event,'change',0,0)" /><input id="formSeguroSegurado:telefoneComercial" type="text" name="formSeguroSegurado:telefoneComercial" class="number mask-phone-segurado" maxlength="9" onblur="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;blur&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneComercial&quot;} ,&quot;sourceId&quot;:this} )" onchange="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;change&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneComercial&quot;} ,&quot;sourceId&quot;:this} )" />
+								</div>
+							</div>
+
+							<div class="field g2 l2"><label id="formSeguroSegurado:optOutros">Telefone Outros</label>
+								<div class="entry phone"><input id="formSeguroSegurado:dddOutros" type="text" name="formSeguroSegurado:dddOutros" class="dd mask-numbers" maxlength="2" onchange="mojarra.ab(this,event,'change',0,0)" /><input id="formSeguroSegurado:telefoneOutros" type="text" name="formSeguroSegurado:telefoneOutros" class="number mask-phone-segurado" maxlength="9" onblur="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;blur&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneOutros&quot;} ,&quot;sourceId&quot;:this} )" onchange="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;change&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:telefoneOutros&quot;} ,&quot;sourceId&quot;:this} )" />
+								</div>
+							</div>
+
+							
+							<div class="cf mbottom5"></div>
+
+							
+
+							<div class="cf mbottom10"></div>
+							<div class="field g8">
+								<span><input id="formSeguroSegurado:j_idt180" type="checkbox" name="formSeguroSegurado:j_idt180" checked="checked" onchange="RichFaces.ajax(this,event,{&quot;parameters&quot;:{&quot;javax.faces.behavior.event&quot;:&quot;change&quot;,&quot;org.richfaces.ajax.component&quot;:&quot;formSeguroSegurado:j_idt180&quot;} ,&quot;sourceId&quot;:this} )" />   <span style="margin: 0px">Autorizo o envio de comunicações para renovação, pendências, ofertas ou novidades de seguros por meios remotos.</span>
+								</span>
+							</div>
+							<div class="cf mbottom10"></div>
+						</div></span>]]></update><update id="listagemApolice"><![CDATA[<div id="listagemApolice" style="visibility: hidden;"><div class="rf-pp-shade" id="listagemApolice_shade" style="z-index:100;"><button class="rf-pp-btn" id="listagemApoliceFirstHref"></button></div><div class="rf-pp-cntr modal-dialog" id="listagemApolice_container" style="position: fixed; z-index:100; "><div class="rf-pp-shdw" id="listagemApolice_shadow"></div><div class="rf-pp-hdr " id="listagemApolice_header"><div class="rf-pp-hdr-cnt" id="listagemApolice_header_content"></div></div><div class="rf-pp-hdr-cntrls " id="listagemApolice_header_controls"><a href="/novo-portal-web-1804/cotacao/seguroSegurado.xhtml?conversationContext=3" class="tw-sprite tw-sprite-close btnFechar" onclick="clickLimparTela(); hideModal('listagemApolice'); fecharModal(); limparModalClickOk();"></a></div><div class="rf-pp-cnt-scrlr" id="listagemApolice_content_scroller"><div class="rf-pp-cnt" id="listagemApolice_content"><span id="listagemApolicePanel" style="height:250px; width:970px;"><label class="bold">Aviso</label><label class="bold bold2">Existe (m) a(s) seguinte (s) apólice(s) a renovar.</label><label class="bold bold2">Deseja efetuar a renovação?</label><table id="tabelaListagemApolicePanel" class="rf-dt table"><colgroup span="5"></colgroup><thead id="tabelaListagemApolicePanel:th" class="rf-dt-thd"><tr id="tabelaListagemApolicePanel:ch" class="rf-dt-shdr"><th class="rf-dt-shdr-c" scope="col" id="tabelaListagemApolicePanel:j_idt400"></th><th class="rf-dt-shdr-c" scope="col" id="tabelaListagemApolicePanel:j_idt402">APÓLICE</th><th class="rf-dt-shdr-c" scope="col" id="tabelaListagemApolicePanel:j_idt405">VEÍCULO</th><th class="rf-dt-shdr-c" scope="col" id="tabelaListagemApolicePanel:j_idt408">PLACA</th><th class="rf-dt-shdr-c" scope="col" id="tabelaListagemApolicePanel:j_idt411">CHASSI</th></tr></thead><tbody id="tabelaListagemApolicePanel:tb" class="rf-dt-b"><tr class="rf-dt-nd"><td colspan="5" class="rf-dt-nd-c" style="display: none;"></td></tr></tbody><tbody id="tabelaListagemApolicePanel:sc"><tr><td style="display: none"><script type="text/javascript">new RichFaces.ui.DataTable("tabelaListagemApolicePanel",{"ajaxEventOptions":{} } )</script></td></tr></tbody></table><span id="loadModal"><input id="j_idt414" name="j_idt414" onclick="jsf.util.chain(this,event,&quot;hideModal('listagemApolice'); gravarApolice(); false ? showModal('modalRenovacaoProcessamento') : hideModal('listagemApolice'); limparModalClickOk();&quot;,&quot;RichFaces.ajax(this,event,{\&quot;parameters\&quot;:{\&quot;javax.faces.behavior.event\&quot;:\&quot;click\&quot;,\&quot;org.richfaces.ajax.component\&quot;:\&quot;j_idt414\&quot;} ,\&quot;sourceId\&quot;:this} )&quot;);return false;" value="ok" class="botaoConfirmar" type="submit" />
+							
+							 <div class="cf mbottom10"></div>
+								<div class="loading" id="loadAguarde1" style="display: none; float: left; padding: 5px 0 0 0; margin-right: 5px; vertical-align: middle; position: relative; top: 2px;"><img src="/novo-portal-web-1804/resources/comum/images/ajax-loader.gif" alt="" />
+									Aguarde, carregando...
+								</div></span></span><span id="j_idt418" style="display: none;"><script type="text/javascript">campoCheckado=function(param){RichFaces.ajax("j_idt418",null,{"parameters":{"param":param} ,"incId":"1"} )};</script></span><span id="j_idt420" style="display: none;"><script type="text/javascript">recuperarApolice=function(param){RichFaces.ajax("j_idt420",null,{"parameters":{"param":param} ,"incId":"1"} )};</script></span><span id="j_idt422" style="display: none;"><script type="text/javascript">limparTela=function(){RichFaces.ajax("j_idt422",null,{"incId":"1"} )};</script></span><span id="j_idt423" style="display: none;"><script type="text/javascript">gravarApolice=function(){RichFaces.ajax("j_idt423",null,{"incId":"1"} )};</script></span><span id="j_idt424" style="display: none;"><script type="text/javascript">limparModal=function(){RichFaces.ajax("j_idt424",null,{"incId":"1"} )};</script></span></div></div></div><script type="text/javascript">new RichFaces.ui.PopupPanel("listagemApolice",{"autosized":true,"moveable":false} );</script></div>]]></update><update id="formRodape"><![CDATA[
+<form id="formRodape" name="formRodape" method="post" action="/novo-portal-web-1804/cotacao/seguroSegurado.xhtml?conversationContext=3" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formRodape" value="formRodape" />
+<span id="formRodape:panelMensagemErro"></span>
+</form>]]></update><update id="javax.faces.ViewState"><![CDATA[-7536877348711730761:-7460403722440714364]]></update><extension id="org.richfaces.extension"><complete>loadingEventSeguradoHide(); setarFocoNome(); false ? showModal('listagemApolice') : loadingEventSeguradoHide();;</complete></extension></changes></partial-response>
